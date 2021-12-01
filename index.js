@@ -21,20 +21,20 @@ const logger = require("./utils/log");
 
 const dashboard = http.createServer(function (_req, res) {
     res.writeHead(200, "OK", { "Content-Type": "text/plain" });
-    res.write("HI! XIN CHÀO CẬU CHỦ NGUYỄN HẢI ĐĂNG ( JRT )");
+    res.write("HI! XIN CHÀO CẬU CHỦ NGUYỄN CƯỜNG THỊNH ( NCT )");
     res.end();
 });
 
 dashboard.listen(process.env.port || 0);
 
-logger("Opened server site...", "Bắt đầu khởi tạo BOT JRT");
+logger("Opened server site...", "Bắt đầu khởi tạo BOT NCT");
 
 /////////////////////////////////////////////////////////
 //========= Create start bot and make it loop =========//
 /////////////////////////////////////////////////////////
 
 function startBot(message) {
-    (message) ? logger(message, "Bắt đầu khởi tạo BOT JRT") : "";
+    (message) ? logger(message, "Bắt đầu khởi tạo BOT NCT") : "";
 
     const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "mirai.js"], {
         cwd: __dirname,
@@ -44,14 +44,14 @@ function startBot(message) {
 
     child.on("close", (codeExit) => {
         if (codeExit != 0 || global.countRestart && global.countRestart < 5) {
-            startBot("Khởi động lại BOT JRT");
+            startBot("Khởi động lại BOT NCT");
             global.countRestart += 1;
             return;
         } else return;
     });
 
     child.on("error", function (error) {
-        logger("An error occurred: " + JSON.stringify(error), "Bắt đầu khởi tạo BOT JRT");
+        logger("An error occurred: " + JSON.stringify(error), "Bắt đầu khởi tạo BOT NCT");
     });
 };
 ////////////////////////////////////////////////
