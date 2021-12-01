@@ -48,18 +48,18 @@ const fs = global.nodemodule["fs-extra"];
 "https://4.bp.blogspot.com/-yAExPAr7JeA/WDaBRVuJwxI/AAAAAAALb7I/Dbvda0KD5uECF3_SBjsvkl2_mqP9_BweQCLcB/s1600/AS000834_17.gif",
   ];
   var callback = () => api.sendMessage({body:`梁ADMIN BOT梁
-  👀 Tên: Nguyễn Hải Đăng (JRT)
-  ❎ Tuổi: 18
+  👀 Tên: Nguyễn Cường Thịnh (ToBi)
+  ❎ Tuổi: 16
   👤 Giới tính: Nam
-  🙄 Sinh ngày: 26-02-2003
-  💫 Chiều cao / cân nặng: 1m75 / 65kg
+  🙄 Sinh ngày: 29/04/2005
+  💫 Chiều cao : 1m75
   💘 Mối quan hệ: Hẹn hò
   😎 Quê quán: Hà Nội
-  🤔 Nơi ở: TP.HCM
-  ♓ Cung: Song Ngư
+  🤔 Nơi ở: TP.Cần Thơ
+  ♓ Cung: Kim Ngưu
   👫 Gu: Lùn cute, tóc dài hoặc ngắn, biết nấu cơm ko biết thì tập, lo lắng quan tâm vậy là đủ :)))
   🌸 Tính cách: Là một con người với niềm đam mê thử thách bản thân và muốn vượt qua giới hạn bản thân để đạt được mục tiêu của mình <3
-  📱 Facebook: https://fb.me/NHD.JRT262
+  📱 Facebook: https://fb.me/cuong.thinh1925
 📢 Lưu ý cho các qtv và tv trong box: 
 - Vui lòng không spam khi sử dụng để tránh die bot
 - Không sử dụng lệnh nhiều của lệnh đó
@@ -69,10 +69,10 @@ const fs = global.nodemodule["fs-extra"];
 => Yêu mọi người nhiều lắm <3 hãy đồng hành cùng với bot và mình nhé <3
 ------------
 ✔Donate:
-💳MB: Đã bẻ thẻ :)
-💳VIB: Đã bẻ thẻ :)
-📲MoMo: 0396049649
+💳MB: 0369773120
+💵Zalo Pay: 0369773120
+📲MoMo: 0369773120
 
-----JRT----`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+----ToBi----`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    };
