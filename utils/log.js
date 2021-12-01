@@ -17,13 +17,13 @@ module.exports = (data, option) => {
 module.exports.loader = (data, option) => {
 	switch (option) {
 		case "warn":
-			console.log(chalk.yellow('» J-JRT « ') + data);
+			console.log(chalk.yellow('» NCT « ') + data);
 			break;
 		case "error":
-			console.log(chalk.red('» J-JRT « ') + data);
+			console.log(chalk.red('» NCT « ') + data);
 			break;
 		default:
-			console.log(chalk.green(`» J-JRT « `) + data);
+			console.log(chalk.green(`» NCT « `) + data);
 			break;
 	}
 }
